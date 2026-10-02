@@ -88,25 +88,26 @@ body {
 
 
 main {
-  max-width: 900px;
-  margin: var(--space-lg) auto;
-  padding: 0 var(--space-lg);
+    max-width: 1000px;
+    margin: 10px auto;
+    padding: 0 40px;
 }
 
+
 section {
-  background-color: var(--color-card);
-  border: 1px solid var(--color-border);
-  border-radius: 8px;
-  padding: var(--space-lg);
-  margin-bottom: var(--space-lg);
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    padding: 5px 0;
+    margin: 0;
+    box-shadow: none;
 }
 
 section h2 {
-  margin-top: 0;
-  color: var(--color-primary);
-  border-bottom: 2px solid var(--color-accent);
-  padding-bottom: var(--space-sm);
+    margin: 0 0 8px 0;
+    color: var(--color-primary);
+    border-bottom: 2px solid var(--color-accent);
+    padding-bottom: 5px;
 }
 
 
