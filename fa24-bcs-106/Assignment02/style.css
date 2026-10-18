@@ -1,0 +1,256 @@
+*{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    font-size: 14px;
+    line-height: 20px;
+   
+ 
+
+}
+.navbar{
+    color:white;
+    background-color: black;
+    height:60px ;
+  display:flex;
+   align-items: center;
+  justify-content: space-evenly;
+    
+}
+/* box1 */
+.nav-logo{
+    width:114px;
+    height:50px;
+}
+.logo{
+    
+    width:100%;
+    height:46px;
+
+
+}
+.logo a{
+    display:block;
+    width: 100%;
+    height: 100%;
+    background-image: url(amazonlogo.png);
+    background-size:cover;
+}
+.border{
+    border:2px solid transparent ;
+    
+}
+.border:hover{
+
+    border:2px solid white ;
+   
+}
+/* box2 */
+.add-first{
+    font-size:0.85rem;
+    color: #CCCCCC;
+    margin-left: 15px;
+}
+.add-second{
+    font-size: 1rem;
+    color:#FFFFFF;
+    margin-left: 3px;
+}
+.add-icon{
+    display:flex;
+    align-items: center;
+    margin-left: 0;
+}
+.nav-search{
+    display:flex;
+    align-items: center;
+    width:500px;
+    height: 40px;
+    border-radius: 2px;
+   
+    justify-content: space-evenly;
+}
+.nav-search:hover{
+    border:4px solid orange;
+}
+
+.search-select{
+    width:50px;
+    height: 40px;
+    text-align: center;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border:none;
+    
+
+}
+.search-input{
+    width:100%;
+    height:40px;
+    border:none;
+    font-size: 1rem;
+    display:flex;
+}
+.search-icon{
+    width:50px;
+    height:40px;
+
+    display:flex;
+     justify-content: center;/*horizontally center the icon */
+    align-items: center;/*vertically center the icon*/
+    font-size: 1.2rem;
+    background-color: yellow;
+    color:black;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+/* box3 */
+#sign-span{
+    font-size: 0.7rem;
+    color:#FFFFFF
+}
+.nav-left{
+    font-size:0.85rem;
+    color:#FFFFFF;
+    font-weight:700;
+}
+.nav-cart i{
+    font-size:30px;
+  
+
+}
+.nav-cart{
+    font-size:0.85rem;
+    font-weight:700;
+    display:flex;
+    align-items: center;
+    
+}
+#cart-span{
+    font-weight:700;
+
+}
+.orders{
+    font-weight: 700;;
+}
+/*Panel*/
+.nav-panel{
+    display:flex;
+    background-color: #222f3d;
+    color:white;
+    height:50px;
+    padding: 10px;
+    
+
+    
+    
+
+    
+
+}
+.nav-panel i{
+    font-weight: 700;
+
+}
+.Panel a{
+
+
+    text-decoration:none;
+    color:white;
+    margin-left:25px;
+    
+
+}
+/* Shopping section */
+.shop{
+    display:flex;
+    height:1000px;
+    width:100%;
+    justify-content: space-evenly;
+
+   
+    
+}
+.shop .box{
+    height:100%;
+    width:100%;
+    border:4px solid white;
+     margin-left: 10px;
+     margin-top:10px;
+     border-radius: 20px;
+     padding: 15px;
+     font-size: 30px;
+     font-weight: 700;
+     
+}
+.shop .box1{
+    height:100%;
+    width: 100%;
+     background-image: url("box1.avif");
+    background-size: cover;
+    font-size: 40px;
+    
+}
+
+
+
+.box2{
+    background-image: url("box2.avif");
+    background-size: cover;
+}
+.box3{
+    background-image: url("box3.avif");
+    background-size: cover;
+    
+}
+.box4{
+    background-image: url("box4.avif");
+    background-size: cover;
+    
+}
+.box5{
+    background-image: url("box5.avif");
+    background-size: cover;
+    
+}
+.bottom-row{
+   
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  flex-wrap: wrap;
+
+}
+.mini {
+    display:flex;
+    flex:1 1 ;
+    width:20%;
+    height: 500px;
+    margin-top:15px;
+    margin-bottom: 15px;
+    justify-content: flex-end;
+  border-radius: 16px;
+  padding: 10px;
+}
+.m1 { 
+    background-image: url("mini1.avif");
+    background-size: cover;
+      }
+.m2 { 
+background-image: url("mini2.avif");
+    background-size: cover; }
+.m3 { 
+background-image: url("mini3.avif");
+    background-size: cover; }
+.m4 { 
+background-image: url("mini4.avif");
+    background-size: cover; }
+.m5 {  
+background-image: url("mini5.avif");
+    background-size: cover;}
+.m6 { 
+background-image: url("mini6.avif");
+    background-size: cover;}
+.m7 { 
+background-image: url("mini7.avif");
+    background-size: cover; }
