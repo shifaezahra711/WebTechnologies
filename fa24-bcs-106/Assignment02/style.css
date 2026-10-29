@@ -7,6 +7,12 @@
  
 
 }
+header{
+    width:100%;
+}
+footer{
+    width:100%;
+}
 .navbar{
     color:white;
     background-color: black;
@@ -32,7 +38,7 @@
     display:block;
     width: 100%;
     height: 100%;
-    background-image: url(amazonlogo.png);
+    background-image: url(images/amazonlogo.png);
     background-size:cover;
 }
 .border{
@@ -161,100 +167,158 @@
 
 }
 /* Shopping section */
-.shop{
-    display:flex;
-    height:1000px;
-    width:100%;
-    justify-content: space-evenly;
-   
-
-   
-    
-}
-.shop .box{
-    height:100%;
-    width:100%;
-    border:4px solid white;
-     margin-left: 10px;
-     margin-top:10px;
-     border-radius: 20px;
-     padding: 15px;
-     padding-top:20px;
-     font-size: 25px;
-     font-weight: 900;
-     
-}
-.shop .box1{
-    height:100%;
+.shop {
+    display: grid;
     width: 100%;
-     background-image: url("box1.avif");
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 100px;
+    gap: 8px;
+    padding: 8px;
+    box-sizing: border-box;
+}
+.shop .box {
+    border-radius: 12px;
+    padding: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
-    font-size: 20px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.shop .box1{
+    grid-column: 1;
+    grid-row: 1 / span 7;
+   
+     background-image: url("images/box1.avif");
+    background-size: cover;
+    
     
 }
 
 
 
 .box2{
-    background-image: url("box2.avif");
+     grid-column: 2;
+    grid-row: 1 / span 3;
+    background-image: url("images/box2.avif");
     background-size: cover;
 }
 .box3{
-    background-image: url("box3.avif");
+
+    grid-column: 3;
+    grid-row: 1 / span 3;
+    background-image: url("images/box3.avif");
     background-size: cover;
     
 }
 .box4{
-    background-image: url("box4.avif");
+    grid-column: 4;
+    grid-row: 1 / span 3;
+  
+    background-image: url("images/box4.avif");
     background-size: cover;
     
 }
 .box5{
-    background-image: url("box5.avif");
+     grid-column: 5;
+    grid-row: 1 / span 3;
+    background-image: url("images/box5.avif");
     background-size: cover;
     
 }
-.bottom-row{
-   
-  display: flex;
-  gap: 12px;
-  overflow-x: auto;
-  flex-wrap: wrap;
 
-}
-.mini {
-    display:flex;
-    flex:1 1 ;
-    width:20%;
-    height: 500px;
-    margin-top:15px;
-    margin-bottom: 15px;
+.shop .mini {
+    grid-row: span 2;
+    padding: 8px;
+    border-radius: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
     justify-content: flex-end;
-  border-radius: 16px;
-  padding: 10px;
+    overflow: hidden;
+    box-sizing: border-box;
 }
 .m1 { 
-    background-image: url("mini1.avif");
-    background-size: cover;
+    grid-column: 2;
+    background-image: url("images/mini1.avif");
+   
       }
 .m2 { 
-background-image: url("mini2.avif");
-    background-size: cover; }
-.m3 { 
-background-image: url("mini3.avif");
-    background-size: cover; }
+    grid-column: 3;
+background-image: url("images/mini2.avif");
+   }
+.m3 {
+    grid-column: 4; 
+background-image: url("images/mini3.avif");
+    }
 .m4 { 
-background-image: url("mini4.avif");
-    background-size: cover; }
+    grid-column: 5;
+background-image: url("images/mini4.avif");
+    }
 .m5 {  
-background-image: url("mini5.avif");
-    background-size: cover;}
+    grid-column: 2;
+background-image: url("images/mini5.avif");
+   }
 .m6 { 
-background-image: url("mini6.avif");
-    background-size: cover;}
+    grid-column: 3;
+background-image: url("images/mini6.avif");
+  }
 .m7 { 
-background-image: url("mini7.avif");
-    background-size: cover; }
+    grid-column: 4;
+background-image: url("images/mini7.avif");
+    }
+
+    /* Tablet */
+@media (max-width: 900px) {
+    .shop {
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+        grid-auto-rows: 55px;
+    }
+
+    .shop .box {
+        grid-column: span 3;
+        grid-row: span 3;
+    }
+
+    .shop .mini {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .shop {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-auto-rows: auto;
+        gap: 8px;
+        padding: 8px;
+    }
+
+    .shop .box {
+        grid-column: span 1;
+        grid-row: auto;
+        aspect-ratio: 1 / 1;
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .shop .mini {
+        grid-column: span 1;
+        grid-row: auto;
+        aspect-ratio: 1 / 1;
+    }
+
+    .shop h2 {
+        font-size: 14px;
+    }
+
+    .shop h3 {
+        font-size: 12px;
+    }
+}
     /* footer */
 .foot-panel1{
     display: flex;
@@ -310,7 +374,7 @@ ul{
     
     height: 50px;
     width: 100px;
-    background-image: url(amazonlogo.png);
+    background-image: url("images/amazonlogo.png");
     background-size:cover;
     
 
@@ -345,6 +409,33 @@ ul{
     color:white;
     
 }
+/* footer and nav bar flexibility */
+@media (max-width: 600px) {
+    .navbar {
+        height: auto;
+        padding: 10px;
+        gap:8px;
+        flex-wrap: wrap;
+        
+    }
+
+    .nav-search {
+        width: 100%;
+    }
+
+    .nav-panel {
+        height: auto;
+        padding: 10px;
+        flex-wrap: wrap;
+        
+        
+    }
+
+    .foot-panel2 {
+        flex-wrap: wrap;
+    }
+}
+
 /* Product styling page  */
 
 .pp-page {
@@ -382,7 +473,7 @@ ul{
     .pp-main-img { width: 100%; max-width: 520px; height: auto; display: none; margin: 0 auto; }
     .pp-main-img.img-1 { display: block; }
 
-    /* Jo thumbnail select ho, uski badi image dikhegi */
+    
     .pp-layout:has(#img-2:checked) .pp-main-img { display: none; }
     .pp-layout:has(#img-3:checked) .pp-main-img { display: none; }
     .pp-layout:has(#img-4:checked) .pp-main-img { display: none; }
@@ -507,3 +598,4 @@ ul{
       .pp-title { font-size: 20px; }
     }
 
+    
